@@ -1,31 +1,36 @@
-core.autocrlf=true
-core.trustctime=false
-core.editor=vim
-core.filemode=false
-core.ignorecase=false
-push.default=simple
-color.ui=true
-credential.helper=wincred
-merge.tool=vimdiff
-mergetool.keeptemporaries=false
-mergetool.keepbackups=false
-mergetool.prompt=false
-mergetool.trustexitcode=false
-alias.last=log -1 --stat
-alias.cp=cherry-pick
-alias.co=checkout
-alias.cl=clone
-alias.ci=commit
-alias.st=status -sb
-alias.br=branch
-alias.unstage=reset HEAD --
-alias.dc=diff --cached
-alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'                                                                                                                  --abbrev-commit --date=relative --all
-alias.lga=log --oneline --graph --decorate --all
-alias.b=branch
-alias.l=log --oneline --graph --decorate --all -5
-alias.lb=log --oneline --graph --decorate -5
-alias.lgb=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset'                                                                                                                  --abbrev-commit --date=relative
-pull.rebase=true
-rerere.enabled=true
-rerere.autoupdate=true
+[core]
+	quotepath = false
+	editor = vim
+	filemode = false
+	ignorecase = false
+	trustctime = false
+	autocrlf = true
+[color]
+  ui=true
+[credential]
+  helper=wincred
+[mergetool]
+	keepBackup = true
+[push]
+	default = simple
+[pull]
+	rebase=true
+[rerere]
+	enabled=true
+	autoupdate=true
+[alias]
+	last = log -1 --stat
+	cp = cherry-pick
+	co = checkout
+	cl = clone
+	ci = commit
+	st = status -sb
+	br = branch
+	unstage = reset HEAD --
+	dc = diff --cached
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date = relative --all
+	lga = log --oneline --graph --decorate --all
+	b = branch
+	l = log --oneline --graph --decorate --all -5
+	lb = log --oneline --graph --decorate -5
+	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative
